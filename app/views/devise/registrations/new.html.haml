@@ -3,7 +3,7 @@
   %head
     %meta{charset: "UTF-8"}
     %meta{name: "viewport", content: "width=device-width"}
-    %title Bookstore
+    %title= t('app_name')
     %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
   %body
     %header.navbar.navbar-default
@@ -14,7 +14,7 @@
             %span.icon-bar
             %span.icon-bar
             %span.icon-bar
-          %a.navbar-brand Bookstore
+          %a.navbar-brand= t('app_name')
           %a.shop-link.pull-right.visible-xs{href: "#"}
             %span.shop-icon
               %span.shop-quantity 3
