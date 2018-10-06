@@ -16,6 +16,9 @@ en:
     title: "Search"
   home:
     no_popular: "Oooops we do not have any bestsellers"
+    welcome_title: "Welcome to our amazing Bookstore!"
+    welcome_text: "We pore through hundreds of new books each month and select the five best we can find to share with our members."
+    best_Sellers: "Best Sellers"
   auth:
     sign_in: "Sign in"
     sign_up: "Sign up"

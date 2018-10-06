@@ -94,3 +94,4 @@ Some core gems usage:
 
 * Devise
 * haml-rails
+* omniauth-facebook
