@@ -85,9 +85,14 @@ $ rails generate devise:views
 $ bundle install
 ````
 
+You can now visit http://localhost:3000/users/sign_up and http://localhost:3000/users/sign_in
+
 Вкинул в /device шаблоны с layout
 
 поменял главную страницу на home/index
+
+OmniAuth Facebook: for DEMO change callback_url: 'http://localhost:3000/users/auth/facebook/callback' at ngrok https url for example
+and in fb tolls https://developers.facebook.com/apps/696762624025656/settings/basic/ change url app
 
 Info
 Some core gems usage:
