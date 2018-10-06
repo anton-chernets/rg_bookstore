@@ -52,11 +52,18 @@
                     %a{href: "#"} Photo
                   %li
                     %a{href: "#"} Web design
+                  %li
+                    %a{href: "#"} Web development
+              %li.dropdown
+                %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"} My account
+                %ul.dropdown-menu
+                  %li
+                    %a{href: "#"} Orders
+                  %li
+                    %a{href: "#"} Settings
                   %li.divider{role: "separator"}
                   %li
-                    %a{href: "#"} Log out
-              %li
-                %a{href: "#"} My account
+                    = link_to t('auth.sign_out'), destroy_user_session_path
     %main.container
       #slider.carousel.slide{'data-ride': "carousel"}
         %ol.carousel-indicators
@@ -196,5 +203,5 @@
                 %a.nav-link{href: "#"}
                   %i.fa.fa-instagram{'aria-hidden': "true"}
     %script{src: "https://use.fontawesome.com/67602d7308.js"}
-    -#%script{src: "../../javascripts/jquery.js"}
-    -#%script{src: "../../javascripts/bootstrap.js"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+    %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}

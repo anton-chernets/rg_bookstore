@@ -22,7 +22,7 @@ en:
   auth:
     sign_in: "Sign in"
     sign_up: "Sign up"
-    sign_out: "Logout"
+    sign_out: "Log out"
     sign_in_first: "You need to be authorized to continue"
     access_denied: "You do not have permission to access this url"
     remember_me: "Remember me"
