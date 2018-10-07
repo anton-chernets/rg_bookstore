@@ -21,6 +21,7 @@ en:
     best_Sellers: "Best Sellers"
   auth:
     sign_in: "Sign in"
+    login_in: "Log in"
     sign_up: "Sign up"
     sign_out: "Log out"
     sign_in_first: "You need to be authorized to continue"
