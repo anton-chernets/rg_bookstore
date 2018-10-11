@@ -52,11 +52,10 @@
                     %a{href: "#"} Photo
                   %li
                     %a{href: "#"} Web design
-                  %li.divider{role: "separator"}
-                  %li
-                    %a{href: "#"} Log out
               %li
-                %a{href: "#"} My account
+                %a{href: new_user_session_path}= t('auth.log_in')
+              %li
+                %a{href: new_user_registration_path}= t('auth.sign_up')
     %main.container.general-main-wrap
       .text-center
         %h3.general-login-title Sign Up
