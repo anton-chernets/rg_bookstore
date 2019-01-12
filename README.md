@@ -80,6 +80,12 @@ $ rails generate devise User
 все заготовленные миграции
 
 ````
+(example
+  create: MacBook-Pro-ninja-3:bookstore ninja$ rails generate migration create_order_items
+  up: rake db:migrate
+  down: rake db:rollback STEP=1
+)
+
 $ rake db:migrate
 $ rails generate devise:views
 $ bundle install

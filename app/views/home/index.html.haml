@@ -64,6 +64,9 @@
                   %li.divider{role: "separator"}
                   %li
                     = link_to t('auth.sign_out'), destroy_user_session_path(:users), method: :delete
+    - if @best_sellers.empty?
+      %h3= t('home.no_popular')
+    - else
     %main.container
       #slider.carousel.slide{'data-ride': "carousel"}
         %ol.carousel-indicators
