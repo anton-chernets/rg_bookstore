@@ -48,13 +48,19 @@
                   %a{href: "#"} Web design
                 %li
                   %a{href: "#"} Web development
-            %li.dropdown
-              %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"} My account
-              %ul.dropdown-menu
-                %li
-                  %a{href: "#"} Orders
-                %li
-                  %a{href: "#"} Settings
-                %li.divider{role: "separator"}
-                %li
-                  = link_to t('auth.sign_out'), destroy_user_session_path(:users), method: :delete
+            - if !user_signed_in?
+              %li
+                %a{href: new_user_session_path}= t('auth.log_in')
+              %li
+                %a{href: new_user_registration_path}= t('auth.sign_up')
+            - else
+              %li.dropdown
+                %a.dropdown-toggle{href: "#", 'data-toggle': "dropdown", role: "button", 'aria-haspopup': "true", 'aria-expanded': "false"} My account
+                %ul.dropdown-menu
+                  %li
+                    %a{href: "#"} Orders
+                  %li
+                    %a{href: "#"} Settings
+                  %li.divider{role: "separator"}
+                    %li
+                      = link_to t('auth.sign_out'), destroy_user_session_path, :method => :delete
