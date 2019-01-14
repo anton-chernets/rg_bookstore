@@ -9,7 +9,7 @@
     %header.head=render "layouts/header"
     %main.container.general-main-wrap
       .text-center
-        %h3.general-login-title Log In
+        %h3.general-login-title= t('auth.login_in')
         %a.general-login-icon{ href: user_facebook_omniauth_authorize_path }
           %i.fa.fa-facebook-official
         %p.general-login-text or
@@ -20,15 +20,15 @@
         .form-group.mb-30
           %label.control-label.input-label{for: "password"} Password
           %input#password.form-control{name:"password", type: "password", placeholder: "Password"}
-          %a.help-block.in-gold-500{href: "#"} Forgot password?
+          %a.help-block.in-gold-500{href: "#"}= t('auth.forgot_password')
         .form-group.checkbox.text-center.mb-30
           %label.checkbox-label
             %input.checkbox-input{type: "checkbox", hidden: "true"}
             %span.checkbox-icon
               %i.fa.fa-check
-            %span.checkbox-text Remember me
+            %span.checkbox-text= t('auth.remember_me')
         .text-center
-          %button.btn.btn-default.mb-20= t('auth.log_in')
+          %button.btn.btn-default.mb-20= t('auth.login_in')
       %p.general-sign-text.text-center
         Don’t have an Account?
         %a.in-gold-500{href: new_user_registration_path}= t('auth.sign_up')

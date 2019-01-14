@@ -29,10 +29,10 @@
             %input.checkbox-input{type: "checkbox", hidden: "true"}
             %span.checkbox-icon
               %i.fa.fa-check
-            %span.checkbox-text Remember me
+            %span.checkbox-text= t('auth.remember_me')
         .text-center
-          %button.btn.btn-default.mb-20 Back to Store
+          %button.btn.btn-default.mb-20= t('auth.sign_up')
       %p.general-sign-text.text-center
         Have an Account?
-        %a.in-gold-500{href: new_user_session_path}= t('auth.log_in')
+        %a.in-gold-500{href: new_user_session_path}= t('auth.login_in')
     %footer.foot=render "layouts/footer"

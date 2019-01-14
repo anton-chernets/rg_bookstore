@@ -50,7 +50,7 @@
                   %a{href: "#"} Web development
             - if !user_signed_in?
               %li
-                %a{href: new_user_session_path}= t('auth.log_in')
+                %a{href: new_user_session_path}= t('auth.login_in')
               %li
                 %a{href: new_user_registration_path}= t('auth.sign_up')
             - else
@@ -60,7 +60,7 @@
                   %li
                     %a{href: "#"} Orders
                   %li
-                    %a{href: "#"} Settings
+                    = link_to t('settings'), edit_user_registration_path
                   %li.divider{role: "separator"}
                     %li
                       = link_to t('auth.sign_out'), destroy_user_session_path, :method => :delete

@@ -24,6 +24,7 @@ en:
     login_in: "Log in"
     sign_up: "Sign up"
     sign_out: "Log out"
+    forgot_password: "Forgot password?"
     sign_in_first: "You need to be authorized to continue"
     access_denied: "You do not have permission to access this url"
     remember_me: "Remember me"
