@@ -1,38 +1,30 @@
-<!DOCTYPE html>
-%html
-  %head
-    %meta{charset: "UTF-8"}
-    %meta{name: "viewport", content: "width=device-width"}
-    %title= t('app_name')
-    %link{href: "https://fonts.googleapis.com/css?family=Open+Sans", rel: "stylesheet"}
-  %body
-    %header.head=render "layouts/header"
-    %main.container.general-main-wrap
-      .text-center
-        %h3.general-login-title= t('auth.sign_up')
-        %a.general-login-icon{ href: user_facebook_omniauth_authorize_path }
-          %i.fa.fa-facebook-official
-        %p.general-login-text or
+%header.head=render "layouts/header"
+%main.container.general-main-wrap
+  .text-center
+    %h3.general-login-title= t('auth.sign_up')
+    %a.general-login-icon{ href: user_facebook_omniauth_authorize_path }
+      %i.fa.fa-facebook-official
+    %p.general-login-text or
 
-      = form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'general-form'}) do |f|
-        .form-group.mb-30
-          = f.label :email, class: 'control-label input-label'
-          = f.email_field :email, class: 'form-control', id: 'email', autocomplete: "email", autofocus: true, placeholder: "Enter Email"
-        .form-group.mb-30
-          = f.label :password, class: 'control-label font-weight-light'
-          = f.password_field :password, class: 'form-control', id: 'password', autocomplete: "new-password", type: "password", placeholder: :password
-        .form-group.mb-30
-          = f.label :password_confirmation, class: 'control-label input-label'
-          = f.password_field :password_confirmation, class: 'form-control', id: 'password2', autocomplete: "new-password", type: "password", placeholder: "Confirm Password"
-        .form-group.checkbox.text-center.mb-30
-          %label.checkbox-label
-            %input.checkbox-input{type: "checkbox", hidden: "true"}
-            %span.checkbox-icon
-              %i.fa.fa-check
-            %span.checkbox-text= t('auth.remember_me')
-        .text-center
-          %button.btn.btn-default.mb-20= t('auth.sign_up')
-      %p.general-sign-text.text-center
-        Have an Account?
-        %a.in-gold-500{href: new_user_session_path}= t('auth.login_in')
-    %footer.foot=render "layouts/footer"
+  = form_for(resource, as: resource_name, url: registration_path(resource_name), html: {class: 'general-form'}) do |f|
+    .form-group.mb-30
+      = f.label :email, class: 'control-label input-label'
+      = f.email_field :email, class: 'form-control', id: 'email', autocomplete: "email", autofocus: true, placeholder: "Enter Email"
+    .form-group.mb-30
+      = f.label :password, class: 'control-label font-weight-light'
+      = f.password_field :password, class: 'form-control', id: 'password', autocomplete: "new-password", type: "password", placeholder: :password
+    .form-group.mb-30
+      = f.label :password_confirmation, class: 'control-label input-label'
+      = f.password_field :password_confirmation, class: 'form-control', id: 'password2', autocomplete: "new-password", type: "password", placeholder: "Confirm Password"
+    .form-group.checkbox.text-center.mb-30
+      %label.checkbox-label
+        %input.checkbox-input{type: "checkbox", hidden: "true"}
+        %span.checkbox-icon
+          %i.fa.fa-check
+        %span.checkbox-text= t('auth.remember_me')
+    .text-center
+      %button.btn.btn-default.mb-20= t('auth.sign_up')
+  %p.general-sign-text.text-center
+    Have an Account?
+    %a.in-gold-500{href: new_user_session_path}= t('auth.login_in')
+%footer.foot=render "layouts/footer"

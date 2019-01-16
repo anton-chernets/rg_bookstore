@@ -1,34 +1,33 @@
 !!!
-%html
-  %footer.navbar-inverse
-    .container
-      .row
-        .col-sm-9
-          %ul.list-inline.general-align.mb-25
-            %li
-              %a.nav-link{href: "/"} Home
-            %li
-              %a.nav-link{href: "#"} Shop
-            %li
-              %a.nav-link{href: "#"} Orders
-            %li
-              %a.nav-link{href: "#"} Settings
-        .col-sm-3
-          %p.general-nav-mail support@bookstore.com
-          %p.general-nav-number (555)-555-5555
-          %ul.list-inline.general-align
-            %li
-              %a.nav-link{href: "https://www.facebook.com/developer.anton"}
-                %i.fa.fa-facebook{'aria-hidden': "true"}
-            %li
-              %a.nav-link{href: "https://twitter.com/Anton_Koka"}
-                %i.fa.fa-twitter{'aria-hidden': "true"}
-            %li
-              %a.nav-link{href: "https://plus.google.com/u/1/+koksohim89?pageId=none"}
-                %i.fa.fa-google-plus{'aria-hidden': "true"}
-            %li
-              %a.nav-link{href: "https://www.instagram.com/codeigniter"}
-                %i.fa.fa-instagram{'aria-hidden': "true"}
-    %script{src: "https://use.fontawesome.com/67602d7308.js"}
-    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
-    %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}
+%footer.navbar-inverse
+  .container
+    .row
+      .col-sm-9
+        %ul.list-inline.general-align.mb-25
+          %li
+            %a.nav-link{href: "/"} Home
+          %li
+            %a.nav-link{href: "#"} Shop
+          %li
+            %a.nav-link{href: "#"} Orders
+          %li
+            = link_to t('settings'), edit_user_registration_path, class: "nav-link"
+      .col-sm-3
+        %p.general-nav-mail support@bookstore.com
+        %p.general-nav-number (555)-555-5555
+        %ul.list-inline.general-align
+          %li
+            %a.nav-link{href: "https://www.facebook.com/developer.anton"}
+              %i.fa.fa-facebook{'aria-hidden': "true"}
+          %li
+            %a.nav-link{href: "https://twitter.com/Anton_Koka"}
+              %i.fa.fa-twitter{'aria-hidden': "true"}
+          %li
+            %a.nav-link{href: "https://plus.google.com/u/1/+koksohim89?pageId=none"}
+              %i.fa.fa-google-plus{'aria-hidden': "true"}
+          %li
+            %a.nav-link{href: "https://www.instagram.com/codeigniter"}
+              %i.fa.fa-instagram{'aria-hidden': "true"}
+  %script{src: "https://use.fontawesome.com/3d3a53909b.js"}
+  %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"}
+  %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}

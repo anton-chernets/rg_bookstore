@@ -14,3 +14,14 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+// $(document).ready(function () {
+//     $('checkbox-remove-account').change(function(){
+//         alert('ffffff');
+//         if($(this).is(":checked")) {
+//             $('#btn-remove-account').removeClass("disabled");
+//         } else {
+//             $('#btn-remove-account').addClass("disabled");
+//         }
+//     });
+// });
