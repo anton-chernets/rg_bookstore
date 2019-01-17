@@ -29,10 +29,10 @@
         %p.in-gold-500.font-18.mb-25= t('auth.remove_account')
         %div
           .general-settings-btn
-            #{button_to t('auth.remove_account_please'), registration_path(resource_name), name: 'btn-remove-account', data: { confirm: "Are you sure?" }, id: 'btn-remove-account', class: 'btn disabled btn-default mb-20', method: :delete}
+            #{button_to t('auth.remove_account_please'), registration_path(resource_name), data: { confirm: "Are you sure?" }, id: 'btn-remove-account', class: 'btn disabled btn-default mb-20', method: :delete}
           .form-group.checkbox.general-settings-checkbox
             %label.checkbox-label
-              %input#checkbox-remove-account.checkbox-input{type: "checkbox", hidden: "true", name: 'checkbox-remove-account'}
+              %input#checkbox-remove-account.checkbox-input{type: "checkbox", hidden: "true"}
               %span.checkbox-icon
                 %i.fa.fa-check
               %span.checkbox-text= t('auth.remove_understand')
