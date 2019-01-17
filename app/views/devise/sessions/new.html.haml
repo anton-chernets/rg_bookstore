@@ -1,4 +1,3 @@
-%header.head=render "layouts/header"
 %main.container.general-main-wrap
   .text-center
     %h3.general-login-title= t('auth.login_in')
@@ -24,7 +23,6 @@
   %p.general-sign-text.text-center
     Don’t have an Account?
     %a.in-gold-500{href: new_user_registration_path}= t('auth.sign_up')
-%footer.foot=render "layouts/footer"
 
 -#%h2 Log in
 -#= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|

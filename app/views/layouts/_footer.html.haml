@@ -1,20 +1,19 @@
-!!!
 %footer.navbar-inverse
   .container
     .row
       .col-sm-9
         %ul.list-inline.general-align.mb-25
           %li
-            %a.nav-link{href: "/"} Home
+            %a.nav-link{href: root_path}= t('home')
           %li
-            %a.nav-link{href: "#"} Shop
+            %a.nav-link{href: "books_url"}= t('shop')#TODO
           %li
-            %a.nav-link{href: "#"} Orders
+            %a.nav-link{href: "account_orders_url"}= t('orders')#TODO
           %li
-            = link_to t('settings'), edit_user_registration_path, class: "nav-link"
+            %a.nav-link{href: edit_user_registration_path}= t('settings')
       .col-sm-3
-        %p.general-nav-mail support@bookstore.com
-        %p.general-nav-number (555)-555-5555
+        %p.general-nav-mail= t('contact_email')
+        %p.general-nav-number= t('contact_phone')
         %ul.list-inline.general-align
           %li
             %a.nav-link{href: "https://www.facebook.com/developer.anton"}
