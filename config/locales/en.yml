@@ -35,6 +35,8 @@ en:
     sign_in_first: "You need to be authorized to continue"
     access_denied: "You do not have permission to access this url"
     remember_me: "Remember me"
+    have_an_account: "Have an Account?"
+    dont_have_an_account: "Don’t have an Account?"
     facebook: "You are successfully authorized with your facebook account"
   currancy: "$"
   book:
